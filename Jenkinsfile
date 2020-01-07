@@ -39,6 +39,9 @@ pipeline {
     docker {
       image 'cypress/base:10'
     }
+    environment {
+        HOME = '.'
+    }
   }
 
   stages {
